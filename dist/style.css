@@ -1,0 +1,75 @@
+body{
+    background:url("../images/yrt.jpg");
+    background-size: cover; 
+    
+}
+
+
+h1{
+    color:white;
+    margin-top: 30px;
+    top:0px;
+    margin-left: 10px;
+   
+}
+h3{
+    color: white;
+    margin-top: 10px;
+    font-size:20px;
+}
+#createbtn{
+  
+    margin-top: 15px;
+    border: none;
+}
+
+.form-group{
+    display: inline-grid;
+    margin: 30px;
+    margin-left: 50px;
+    margin-top: 60px;
+    font-size: 14px;
+    background-color:black;
+    height: 350px;
+}
+label{
+    color: white;
+}
+.alert{
+    color: red;
+    font-size: 24px;
+    margin-top: 40px;
+    margin-left: 160px;
+    width: 300px;
+    background-color: wheat;
+}
+input{
+    width: 250px;
+    margin: 20px;
+
+}
+#imagetodo{
+    width: 150px;
+    height: 100px;
+}
+#submitbtn{
+    border-radius: 20px;
+    box-sizing: border-box;
+    width: 130px;
+    height: 40px;
+}
+.formdisplay{
+    display: flex;
+    margin-top: 0px;
+}
+
+.displaydiv{
+    margin: 20px;
+    display: block;
+}
+ul li{
+   
+    color: black;
+    font-size: 20px;
+    list-style: none;
+}
