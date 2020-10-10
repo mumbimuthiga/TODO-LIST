@@ -12,6 +12,7 @@ div1.appendChild(div2)
 const createtodofxn=createbtn.addEventListener('click' ,()=>{
     const form=document.createElement("form");
     form.classList="form-group";
+   
     //Title
     const divtitle=document.createElement("div");
     const titleinput=document.createElement("input")
@@ -71,11 +72,12 @@ const datedead=document.createElement("label");
         const de1=descriptionInput.value;
         const c1=dateInput.value;
         const d1=deadlineInput.value
+        
+      if(t1==='' || de1==='' ||c1===''|| d1===''){
         const divalert=document.createElement("div");
         divalert.classList="alert";
-        div1.insertBefore( divalert ,form);
+        div1.insertBefore( divalert ,content);
         setTimeout(()=>divalert.remove(),3000);
-      if(t1==='' || de1==='' ||c1===''|| d1===''){
           divalert.innerHTML="Please Fill all the fields";
       }else{
         const divimage=document.createElement('div');

@@ -3,9 +3,125 @@
 <title>TODO LIST APP</title>
 </head>
 <body>
-    <div id="content"></div>
-    <link rel="stylesheet" href="./style.css">
+    <div class="main">
+ 
+        <div class="create">
+        <div class="createproject">
+        <button id="createprojbtn"><img src="../images/createbtn.png" width="40px"height="40px">New Project</button>
+        </div>
+        <div class="createdaily">
+            <button id="createdailybtn"><img src="../images/createbtn.png" width="40px"height="40px">Daily Tasks</button>
+            </div>
+        <div class="creatediv">
+            <button id="createbtn"><img src="../images/createbtn.png" width="50px"height="40px">Add Task</button>
+            </div>
+            </div>
+
+    <!----- Form Daily--->
+    
+    <form class="form-daily" autocomplete="off" aria-hidden="false">
+        
+        <div class="dailyform">
+          <h5>Laundry</h5>
+          <p>2020-10-01
+              <br>
+            clean clothes</p>
+            <button id="details">Details</button>
+            <button id="delit1">X</button>
+        </div>
+        
+        <div class="dailyform1">
+            <h5>Laundry</h5>
+            <p>2020-10-01
+                <br>
+              clean clothes</p>
+              <button id="details">Details</button>
+              <button id="delit">X</button>
+              
+          </div>
+    </form>
+    <div class="formdetails">
+        <button id="backbtn">Back</button>
+        <form>
+        <h5>Laundry</h5>
+        <p>
+            Date: 2020-10-01
+        </p>
+            <p>Explanation: clean clothes</p>
+            <p>Details: take all clothes put into machine</p>
+        </p>
+    </form>
+    </div>
+    
+
+            <!----- Form Project--->
+            <form class="form-project" autocomplete="off">
+
+                <div class="projname">
+                   
+                    <label>Project Name</label>
+                   <button id="imgproj" ><img src="../images/remove.png" width="30px" height="30px"></button>
+                    <input type="text" id="titleproj"placeholder="Project Name">
+                </div>
+                <div class="subproj">
+                   <button id="projsubmit">Submit</button>
+                </div>
+                </form>
+            
+            <div id="content">
+        <form class="form-control">
+            <form class="form-control">
+                <div class="form-group">
+                    <label>Title</label>
+                    <input type="text" id="title"placeholder="Title">
+                </div>   <div class="form-group">
+            <label>Title</label>
+            <input type="text" id="title"placeholder="Title">
+        </div>
+        <div class="form-group">
+            <label>Description</label>
+            <input type="textarea" id="desc" placeholder="Description">
+        </div>
+        <div class="form-group">
+            <label>Due Date</label>
+            <input type="Date" id="date" placeholder="Due Date">
+        </div>
+        <div class="form-group">
+            <label>Priority</label>
+            <input type="text" id="prior">
+          
+        </div>
+        <div class="form-group">
+ <button id="submitbtn">Submit</button>
+        </div>
+    </form>
+    <div class="displaydiv">
+        <form>
+            
+            <div class="displayform">
+                <h3>Projects </h3>
+            </div>
+            <div class="filter">
+              <h3>Filter</h3>
+            </div>
+            <div class="sort">
+                <h3>Sort</h3>
+              </div>
+        </form>
+  
+    </div>
+    </div>
+    </div>
+
+
+
+<script src="../src/dailycreate.js"></script>
+<script src="../src/taskcreate.js"></script>
+ <script src="../src/displaytodo.js"></script>  
+ <script src="../src/projectcreate.js"></script> 
+ <script src="../src/displayproject.js"></script>
+
+<link rel="stylesheet" href="./style.css">
 </body>
-<script src="../src/index.js"></script>
-<script src="../src/createtodo.js"></script>
+
 </html>
